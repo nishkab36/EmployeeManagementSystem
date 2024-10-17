@@ -1,4 +1,3 @@
-![image](https://github.com/user-attachments/assets/aeb19396-1191-4265-a058-5b87f0972bf5)# EmployeeManagementSystem
 A C# .NET application for managing employee records, payroll, attendance tracking through a user-friendly interface. This project utilizes Windows Forms for the frontend and SQL Server for the backend database.
 
 ## Technology Stack
