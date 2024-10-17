@@ -1,0 +1,343 @@
+### Form5 ###
+# Form5.Designer.cs: #
+namespace WindowsFormsApp1
+{
+    partial class Form5
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.cmbempid = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.cmbstatus = new System.Windows.Forms.ComboBox();
+            this.btnfind = new System.Windows.Forms.Button();
+            this.btnsubmit = new System.Windows.Forms.Button();
+            this.panel1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.DarkBlue;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(0, 1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(808, 61);
+            this.panel1.TabIndex = 10;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(205, 17);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(379, 29);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Employee Management System";
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dateTimePicker2.Location = new System.Drawing.Point(216, 199);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker2.TabIndex = 33;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dateTimePicker1.Location = new System.Drawing.Point(216, 153);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker1.TabIndex = 32;
+            // 
+            // cmbempid
+            // 
+            this.cmbempid.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbempid.FormattingEnabled = true;
+            this.cmbempid.Location = new System.Drawing.Point(216, 106);
+            this.cmbempid.Name = "cmbempid";
+            this.cmbempid.Size = new System.Drawing.Size(200, 30);
+            this.cmbempid.TabIndex = 31;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(135, 290);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(72, 24);
+            this.label6.TabIndex = 29;
+            this.label6.Text = "Status:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(149, 242);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(58, 24);
+            this.label5.TabIndex = 28;
+            this.label5.Text = "Date:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(61, 199);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(150, 24);
+            this.label4.TabIndex = 27;
+            this.label4.Text = "Punchout time:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(61, 153);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(146, 24);
+            this.label3.TabIndex = 26;
+            this.label3.Text = "Punchin Time:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(72, 106);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(135, 24);
+            this.label2.TabIndex = 25;
+            this.label2.Text = "Employee ID:";
+            // 
+            // dateTimePicker3
+            // 
+            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker3.Location = new System.Drawing.Point(216, 242);
+            this.dateTimePicker3.Name = "dateTimePicker3";
+            this.dateTimePicker3.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker3.TabIndex = 37;
+            // 
+            // cmbstatus
+            // 
+            this.cmbstatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbstatus.FormattingEnabled = true;
+            this.cmbstatus.Items.AddRange(new object[] {
+            "Full Day",
+            "On Leave",
+            "Half Day"});
+            this.cmbstatus.Location = new System.Drawing.Point(216, 290);
+            this.cmbstatus.Name = "cmbstatus";
+            this.cmbstatus.Size = new System.Drawing.Size(200, 30);
+            this.cmbstatus.TabIndex = 38;
+            // 
+            // btnfind
+            // 
+            this.btnfind.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnfind.Location = new System.Drawing.Point(421, 396);
+            this.btnfind.Name = "btnfind";
+            this.btnfind.Size = new System.Drawing.Size(191, 40);
+            this.btnfind.TabIndex = 40;
+            this.btnfind.Text = "Find";
+            this.btnfind.UseVisualStyleBackColor = true;
+            this.btnfind.Click += new System.EventHandler(this.btnfind_Click);
+            // 
+            // btnsubmit
+            // 
+            this.btnsubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsubmit.Location = new System.Drawing.Point(175, 396);
+            this.btnsubmit.Name = "btnsubmit";
+            this.btnsubmit.Size = new System.Drawing.Size(170, 40);
+            this.btnsubmit.TabIndex = 39;
+            this.btnsubmit.Text = "Submit";
+            this.btnsubmit.UseVisualStyleBackColor = true;
+            this.btnsubmit.Click += new System.EventHandler(this.btnsubmit_Click);
+            // 
+            // Form5
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this.ClientSize = new System.Drawing.Size(800, 480);
+            this.Controls.Add(this.btnfind);
+            this.Controls.Add(this.btnsubmit);
+            this.Controls.Add(this.cmbstatus);
+            this.Controls.Add(this.dateTimePicker3);
+            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.cmbempid);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.panel1);
+            this.Name = "Form5";
+            this.Text = "Form5";
+            this.Load += new System.EventHandler(this.Form5_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ComboBox cmbempid;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.ComboBox cmbstatus;
+        private System.Windows.Forms.Button btnfind;
+        private System.Windows.Forms.Button btnsubmit;
+    }
+}
+
+# Form5.cs: #
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Data.SqlClient;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace WindowsFormsApp1
+{
+    public partial class Form5 : Form
+    {
+        SqlConnection con = new SqlConnection();
+        public Form5()
+        {
+            InitializeComponent();
+        }
+
+        private void Form5_Load(object sender, EventArgs e)
+        {
+            string connstring = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\bijal\Documents\CaseStudy.mdf;Integrated Security=True;Connect Timeout=30";
+            con.ConnectionString = connstring;
+            con.Open();
+            PopulateEmployeeComboBox();
+        }
+
+        private void btnsubmit_Click(object sender, EventArgs e)
+        {
+            if (cmbempid.SelectedItem == null ||
+                dateTimePicker1.Value == null ||
+                dateTimePicker2.Value == null ||
+                dateTimePicker3.Value == null ||
+                cmbstatus.SelectedItem == null)
+            {
+                MessageBox.Show("Employee ID, Punchin Time, Punchout Time, Date, and Status are required fields.");
+                return; 
+            }
+
+            int employeeId = int.Parse(cmbempid.SelectedItem.ToString());
+            string checkQuery = "SELECT COUNT(*) FROM Employees WHERE EmployeeId = @EmployeeId";
+            SqlCommand checkCmd = new SqlCommand(checkQuery, con);
+            checkCmd.Parameters.AddWithValue("@EmployeeId", employeeId);
+            int employeeExists = (int)checkCmd.ExecuteScalar();
+
+            if (employeeExists == 0)
+            {
+                MessageBox.Show("The selected Employee ID does not exist in the Employees table.");
+                return; 
+            }
+
+            DateTime date = dateTimePicker3.Value.Date;
+
+            string query = "INSERT INTO Attendance (EmployeeId, Date, CheckInTime, CheckOutTime, Status) " +
+                           "VALUES (" + employeeId + ", '" +
+                           date.ToString("yyyy-MM-dd") + "', '" +
+                           dateTimePicker1.Value.ToString("HH:mm:ss") + "', '" +
+                           dateTimePicker2.Value.ToString("HH:mm:ss") + "', '" +
+                           cmbstatus.SelectedItem.ToString() + "')";
+
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = con;
+            cmd.CommandText = query;
+            cmd.ExecuteNonQuery();
+
+            MessageBox.Show("Attendance Record Inserted Successfully");
+        }
+
+
+
+        private void PopulateEmployeeComboBox()
+        {
+            cmbempid.Items.Clear();
+
+            string query = "SELECT EmployeeId FROM Employees";
+            SqlCommand cmd = new SqlCommand(query, con);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                cmbempid.Items.Add(reader["EmployeeId"].ToString());
+            }
+            reader.Close();
+        }
+
+        private void btnfind_Click(object sender, EventArgs e)
+        {
+            if (cmbempid.SelectedItem == null)
+            {
+                MessageBox.Show("Please select an Employee ID to find attendance records.");
+                return; 
+            }
+
+            int employeeId = int.Parse(cmbempid.SelectedItem.ToString());
+
+            string query = "SELECT COUNT(*) FROM Attendance WHERE EmployeeId = @EmployeeId AND Status <> 'On Leave'";
+
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.Parameters.AddWithValue("@EmployeeId", employeeId);
+
+            int attendanceCount = (int)cmd.ExecuteScalar();
+
+            MessageBox.Show("Employee with ID " + employeeId + " attended for " + attendanceCount + " days.");
+        }
+    }
+}
