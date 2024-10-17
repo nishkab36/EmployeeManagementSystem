@@ -1,0 +1,144 @@
+### Form2 ###
+using System;
+using System.Windows.Forms;
+
+namespace WindowsFormsApp1
+{
+    public partial class Form2 : Form
+    {
+        public Form2()
+        {
+            InitializeComponent();
+            SetupUI(); // Call the method to setup UI elements
+        }
+
+        private void SetupUI()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+
+            // Initialize buttons
+            btnemp = new Button();
+            btnemp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.5F);
+            btnemp.Location = new System.Drawing.Point(12, 232);
+            btnemp.Size = new System.Drawing.Size(227, 40);
+            btnemp.Text = "Employee Management";
+            btnemp.Click += new EventHandler(this.btnemp_Click);
+
+            btnatd = new Button();
+            btnatd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.5F);
+            btnatd.Location = new System.Drawing.Point(476, 232);
+            btnatd.Size = new System.Drawing.Size(227, 40);
+            btnatd.Text = "Attendance Tracking";
+            btnatd.Click += new EventHandler(this.btnatd_Click);
+
+            btnpayroll = new Button();
+            btnpayroll.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.5F);
+            btnpayroll.Location = new System.Drawing.Point(296, 232);
+            btnpayroll.Size = new System.Drawing.Size(137, 40);
+            btnpayroll.Text = "Payroll";
+            btnpayroll.Click += new EventHandler(this.btnpayroll_Click);
+
+            // Initialize panel
+            panel1 = new Panel();
+            panel1.BackColor = System.Drawing.Color.DarkBlue;
+            panel1.Location = new System.Drawing.Point(-3, 1);
+            panel1.Size = new System.Drawing.Size(719, 61);
+            panel1.Controls.Add(new Label
+            {
+                AutoSize = true,
+                Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold),
+                ForeColor = System.Drawing.Color.White,
+                Location = new System.Drawing.Point(176, 19),
+                Size = new System.Drawing.Size(379, 29),
+                Text = "Employee Management System"
+            });
+
+            // Initialize PictureBoxes
+            pictureBox1 = new PictureBox
+            {
+                Image = (System.Drawing.Image)(resources.GetObject("pictureBox1.Image")),
+                Location = new System.Drawing.Point(63, 120),
+                Size = new System.Drawing.Size(126, 90),
+                SizeMode = PictureBoxSizeMode.Zoom
+            };
+
+            pictureBox2 = new PictureBox
+            {
+                Image = (System.Drawing.Image)(resources.GetObject("pictureBox2.Image")),
+                Location = new System.Drawing.Point(323, 120),
+                Size = new System.Drawing.Size(91, 90),
+                SizeMode = PictureBoxSizeMode.Zoom
+            };
+
+            pictureBox3 = new PictureBox
+            {
+                Image = (System.Drawing.Image)(resources.GetObject("pictureBox3.Image")),
+                Location = new System.Drawing.Point(532, 120),
+                Size = new System.Drawing.Size(125, 90),
+                SizeMode = PictureBoxSizeMode.Zoom
+            };
+
+            pictureBox4 = new PictureBox
+            {
+                Image = (System.Drawing.Image)(resources.GetObject("pictureBox4.Image")),
+                Location = new System.Drawing.Point(220, 358),
+                Size = new System.Drawing.Size(98, 55),
+                SizeMode = PictureBoxSizeMode.Zoom
+            };
+
+            // Initialize logout button
+            btnlogout = new Button
+            {
+                Font = new System.Drawing.Font("Microsoft Sans Serif", 9F),
+                Location = new System.Drawing.Point(324, 370),
+                Size = new System.Drawing.Size(90, 30),
+                Text = "Log Out"
+            };
+            btnlogout.Click += new EventHandler(this.btnlogout_Click);
+
+            // Add controls to the form
+            this.Controls.Add(btnemp);
+            this.Controls.Add(btnatd);
+            this.Controls.Add(btnpayroll);
+            this.Controls.Add(panel1);
+            this.Controls.Add(pictureBox1);
+            this.Controls.Add(pictureBox2);
+            this.Controls.Add(pictureBox3);
+            this.Controls.Add(pictureBox4);
+            this.Controls.Add(btnlogout);
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            // Any additional logic for when the form loads can go here
+        }
+
+        private void btnlogout_Click(object sender, EventArgs e)
+        {
+            Form1 dashboard = new Form1();
+            dashboard.Show();
+            this.Hide();
+        }
+
+        private void btnemp_Click(object sender, EventArgs e)
+        {
+            Form3 dashboard = new Form3();
+            dashboard.Show();
+            this.Hide();
+        }
+
+        private void btnpayroll_Click(object sender, EventArgs e)
+        {
+            Form4 dashboard = new Form4();
+            dashboard.Show();
+            this.Hide();
+        }
+
+        private void btnatd_Click(object sender, EventArgs e)
+        {
+            Form5 dashboard = new Form5();
+            dashboard.Show();
+            this.Hide();
+        }
+    }
+}
