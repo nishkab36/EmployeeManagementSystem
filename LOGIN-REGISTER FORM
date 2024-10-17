@@ -1,0 +1,253 @@
+### FORM 1 OF THE APPLICATION ###
+
+# Form1.Designer.cs : #
+namespace WindowsFormsApp1
+{
+    partial class Form1
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.btnRegister = new System.Windows.Forms.Button();
+            this.txtuname = new System.Windows.Forms.TextBox();
+            this.txtpass = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(83, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(379, 29);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Employee Management System";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(131, 124);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(111, 24);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Username:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(134, 169);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(106, 24);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Password:";
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Location = new System.Drawing.Point(88, 265);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(170, 40);
+            this.btnLogin.TabIndex = 3;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            // 
+            // btnRegister
+            // 
+            this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegister.Location = new System.Drawing.Point(292, 265);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(170, 40);
+            this.btnRegister.TabIndex = 4;
+            this.btnRegister.Text = "Register";
+            this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
+            // 
+            // txtuname
+            // 
+            this.txtuname.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtuname.Location = new System.Drawing.Point(262, 122);
+            this.txtuname.Name = "txtuname";
+            this.txtuname.Size = new System.Drawing.Size(100, 28);
+            this.txtuname.TabIndex = 1;
+            // 
+            // txtpass
+            // 
+            this.txtpass.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtpass.Location = new System.Drawing.Point(262, 169);
+            this.txtpass.Name = "txtpass";
+            this.txtpass.PasswordChar = '*';
+            this.txtpass.Size = new System.Drawing.Size(100, 28);
+            this.txtpass.TabIndex = 2;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.DarkBlue;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(545, 61);
+            this.panel1.TabIndex = 7;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this.ClientSize = new System.Drawing.Size(545, 379);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.txtpass);
+            this.Controls.Add(this.txtuname);
+            this.Controls.Add(this.btnRegister);
+            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Name = "Form1";
+            this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Button btnRegister;
+        private System.Windows.Forms.TextBox txtuname;
+        private System.Windows.Forms.TextBox txtpass;
+        private System.Windows.Forms.Panel panel1;
+    }
+}
+
+
+# Form1.cs: #
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Data.SqlClient;
+using System.Drawing;
+using System.Linq;
+using System.Security.Cryptography;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace WindowsFormsApp1
+{
+    public partial class Form1 : Form
+    {
+        SqlConnection con = new SqlConnection();
+        SqlCommand cmd = new SqlCommand();
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            string connstring = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Users\bijal\Documents\CaseStudy.mdf; Integrated Security = True; Connect Timeout = 30";
+            con.ConnectionString = connstring;
+            con.Open();
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            string query;
+            SqlDataReader dr;
+
+            // Check if username is empty
+            if (string.IsNullOrEmpty(txtuname.Text))
+            {
+                MessageBox.Show("Please enter Username");
+                txtuname.Focus();
+                return;
+            }
+
+            // Check if password is empty
+            if (string.IsNullOrEmpty(txtpass.Text))
+            {
+                MessageBox.Show("Please enter Password");
+                txtpass.Focus();
+                return;
+            }
+
+            // Query to check username and password from the Users table
+            query = "Select * from Users where Username='" + txtuname.Text + "' and PasswordHash='" + txtpass.Text + "'";
+            cmd.CommandText = query;
+            cmd.Connection = con;
+
+            dr = cmd.ExecuteReader();
+
+            // If user exists, show success and open Dashboard
+            if (dr.Read())
+            {
+                MessageBox.Show("Login Successfully done");
+                dr.Close();
+
+                // Open the Dashboard form
+                Form2 dashboard = new Form2();
+                dashboard.Show();
+                this.Hide();  // Hide login form
+            }
+            else
+            {
+                // If credentials are invalid
+                MessageBox.Show("Invalid username or password.");
+            }
+
+            dr.Close();
+        }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            string query;
+
+            query = "Insert into Users(Username, PasswordHash) values ('" + txtuname.Text + "','" + txtpass.Text + "')";
+            cmd.CommandText = query;
+            cmd.Connection = con;
+            cmd.ExecuteNonQuery();
+
+            MessageBox.Show("User Successfully Registered");
+        }
+    }
+
+}
